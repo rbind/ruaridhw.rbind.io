@@ -1,6 +1,6 @@
 languageCode = "en-us"
 title = "@ruaridhw"
-baseurl = "http://ruaridhw.rbind.io/"
+baseurl = "https://ruaridhw.netlify.com/"
 theme = "hugo-highlights-theme"
 
 googleAnalytics = "UA-108468724-1"
