@@ -1,0 +1,142 @@
+languageCode = "en-us"
+title = "@ruaridhw"
+baseurl = "http://ruaridhw.rbind.io/"
+theme = "hugo-highlights-theme"
+
+googleAnalytics = "UA-108468724-1"
+
+[params]
+
+  # You can use Markdown for urls [text](//domain.tld/source)
+  #
+  # All icons using Fontawesom's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+  # for more icons.
+
+  # To provide more meta data for search engings feel free to add a few informations.
+  # This lines will be inserted as meta tags.
+  name = "Ruaridh Williamson"
+  description = ""
+
+  # For a static site it's not possible to provide a contact form. The contact form uses
+  # www.formspree.io as a proxy. The form makes a Post request to their servers to send an email
+  # Visitors can send up to a 1000 emails each month
+  #
+  # How to setup formspree
+  #
+  # - set your email address under 'email' below
+  # - upload the generated site to your server
+  # - send a dummy email to yourself to confirm your account
+  # - click the confirmation link in the email from www.formspree.io
+  # - That's all. Enjoy mailing!
+  email = "your@mail.com"
+
+  # If this param is set to true, every section gets an own background image (located at static/images)
+  # to change the image you could use the param picture on every section.
+  # If it's disabled you could change the background to overwrite the bg.png and overlay.png to set the background.
+  backgroundpersection = true
+
+  # Hero Section
+  [params.hero]
+    title = "Ruaridh W"
+    description = "MSc Candidate @ LSE\n&bull;\nSenior Consultant in Modelling & Analytics"
+    buttontext = "begin"
+
+  # about section
+  [params.about]
+    enable = true
+    title = "Who am I?"
+    description = "I am a postgraduate student at the London School of Economics studying a Masters in Analytics & Operations Research. My focus is primarily on mathematical programming, data mining, managing & manipulating and social network analysis.\n\nUntil mid-2017, I was a Senior Consultant in the Insight Analytics team of PwC Melbourne. I have also been fortunate enough to write an internal paper for the Real Options and Financial Risk team of the Commonwealth Scientific and Industrial Research Organisation (now Data61)."
+    buttontext = "next"
+    # the picture is storead at static/images/
+    picture = "pic01.jpg"
+
+  # skill section
+  [params.skill_list]
+    enable = true
+    title = "My Life"
+    description = "... is building networkx graphs of London's cycle paths on the way to a client office for a [Jazz Chopin](https://www.youtube.com/watch?v=zVTR-9HyjPA) recital."
+    buttontext = "next"
+    # the picture is storead at static/images/
+    picture = "pic02.jpg"
+
+    [[params.skills]]
+      icon = "fa-comments"
+      title = "Consultant"
+      
+    [[params.skills]]
+      icon = "fa-music"
+      title = "Musician"
+
+    [[params.skills]]
+      icon = "fa-code"
+      title = "R, Python + SQL"
+
+    [[params.skills]]
+      icon = "fa-bicycle"
+      title = "Cyclist"
+  
+  # infos section
+  [params.infos]
+    enable = false
+    # title = "One more thing"
+    # description = ""
+    # the picture is storead at static/images/
+    # picture = "pic03.jpg"
+
+  # footer section
+  # this section includes
+  #
+  # - the contact form
+  # - social icons
+  #
+  # It's possible to disable the whole footer or disable only social icons or contact form
+
+  [params.footer]
+    enable = true
+    title = "Say Hi!"
+
+    # contact form
+    [params.footer.contact]
+      enable = false
+
+    [params.footer.contact.form]
+      name = "Name"
+      email = "Your Email"
+      message = "Your Message"
+      buttontext = "send message"
+
+    # social icons
+    [params.footer.social_list]
+      enable = true
+        
+      [[params.footer.social]]
+        medium = "LinkedIn"
+        icon = "fa-linkedin"
+        link = "https://www.linkedin.com/in/ruaridhwilliamson/"
+      
+      [[params.footer.social]]
+        medium = "Github"
+        icon = "fa-github"
+        link = "https://github.com/ruaridhw"
+      
+      [[params.footer.social]]
+        medium = "Stack Overflow"
+        icon = "fa-stack-overflow"
+        link = "https://stackoverflow.com/users/7312238/ruaridhw?tab=profile"
+
+      [[params.footer.social]]
+        title = "Email"
+        icon = "fa-envelope"
+        link = "mailto:r.williamson@lse.ac.uk"
+
+    # copyright
+    #[params.footer.copyright.notice]
+
+      [[params.footer.copyright.notice]]
+        text = "© 2017 Ruaridh Williamson"
+
+      [[params.footer.copyright.notice]]
+        text = "Design: [HTML5UP](//html5up.net)"
+
+      [[params.footer.copyright.notice]]
+        text = "Demo Images: [Unsplash](//unsplash.com/)"
